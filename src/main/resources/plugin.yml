@@ -1,0 +1,19 @@
+name: PluginMute
+version: '${version}'
+main: ru.marquina.pluginmute.PluginMute
+api-version: '1.21'
+commands:
+  mute:
+    description: Замутить игрока.
+    usage: /<command> <игрок> <время_в_секундах> [причина]
+    permission: pluginmute.mute
+    permission-message: У вас нет разрешения на использование этой команды.
+  unmute:
+    description: Размутить игрока.
+    usage: /<command> <игрок>
+    permission: pluginmute.mute
+    permission-message: У вас нет разрешения на использование этой команды.
+permissions:
+  pluginmute.mute:
+    description: Разрешает использовать команды мута.
+    default: op
